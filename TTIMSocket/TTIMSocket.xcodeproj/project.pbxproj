@@ -16,9 +16,13 @@
 		71494EA6207B77A1006C7A38 /* TTSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71494EA5207B77A1006C7A38 /* TTSocketManager.m */; };
 		71494EA9207B8457006C7A38 /* TTOSSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71494EA8207B8457006C7A38 /* TTOSSocketViewController.m */; };
 		71494EAD207B8A40006C7A38 /* TTCocoaAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 71494EAC207B8A40006C7A38 /* TTCocoaAsyncSocket.m */; };
+		71494EB1207B9E72006C7A38 /* TTWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 71494EB0207B9E72006C7A38 /* TTWebSocket.m */; };
+		71494F88207CB0A2006C7A38 /* TTWebSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71494F87207CB0A2006C7A38 /* TTWebSocketViewController.m */; };
+		85C2B48E347CFD851C699523 /* libPods-TTIMSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 587632C4B836F4DFECB0B47D /* libPods-TTIMSocket.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		587632C4B836F4DFECB0B47D /* libPods-TTIMSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTIMSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71494E8A207B76D6006C7A38 /* TTIMSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTIMSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71494E8D207B76D6006C7A38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71494E8E207B76D6006C7A38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +39,12 @@
 		71494EA8207B8457006C7A38 /* TTOSSocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTOSSocketViewController.m; sourceTree = "<group>"; };
 		71494EAB207B8A40006C7A38 /* TTCocoaAsyncSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTCocoaAsyncSocket.h; sourceTree = "<group>"; };
 		71494EAC207B8A40006C7A38 /* TTCocoaAsyncSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTCocoaAsyncSocket.m; sourceTree = "<group>"; };
+		71494EAF207B9E72006C7A38 /* TTWebSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTWebSocket.h; sourceTree = "<group>"; };
+		71494EB0207B9E72006C7A38 /* TTWebSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTWebSocket.m; sourceTree = "<group>"; };
+		71494F86207CB0A2006C7A38 /* TTWebSocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTWebSocketViewController.h; sourceTree = "<group>"; };
+		71494F87207CB0A2006C7A38 /* TTWebSocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTWebSocketViewController.m; sourceTree = "<group>"; };
+		A070F1E5F50A0D95359AC4E4 /* Pods-TTIMSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTIMSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTIMSocket/Pods-TTIMSocket.debug.xcconfig"; sourceTree = "<group>"; };
+		D119F0AD9D621CC9F262ECBE /* Pods-TTIMSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTIMSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTIMSocket/Pods-TTIMSocket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C2B48E347CFD851C699523 /* libPods-TTIMSocket.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06B1A89D6A07588DF190E50A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A070F1E5F50A0D95359AC4E4 /* Pods-TTIMSocket.debug.xcconfig */,
+				D119F0AD9D621CC9F262ECBE /* Pods-TTIMSocket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0935BB2DDFD3BC710B1F4DD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				587632C4B836F4DFECB0B47D /* libPods-TTIMSocket.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71494E81207B76D6006C7A38 = {
 			isa = PBXGroup;
 			children = (
 				71494E8C207B76D6006C7A38 /* TTIMSocket */,
 				71494E8B207B76D6006C7A38 /* Products */,
+				06B1A89D6A07588DF190E50A /* Pods */,
+				0935BB2DDFD3BC710B1F4DD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +97,7 @@
 		71494E8C207B76D6006C7A38 /* TTIMSocket */ = {
 			isa = PBXGroup;
 			children = (
+				71494EAE207B9CBD006C7A38 /* WebSocket */,
 				71494EAA207B8A0F006C7A38 /* CocoaAsyncSocket */,
 				71494EA3207B777C006C7A38 /* OSSocket */,
 				71494E8D207B76D6006C7A38 /* AppDelegate.h */,
@@ -102,6 +133,17 @@
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
+		71494EAE207B9CBD006C7A38 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				71494EAF207B9E72006C7A38 /* TTWebSocket.h */,
+				71494EB0207B9E72006C7A38 /* TTWebSocket.m */,
+				71494F86207CB0A2006C7A38 /* TTWebSocketViewController.h */,
+				71494F87207CB0A2006C7A38 /* TTWebSocketViewController.m */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71494EA0207B76D7006C7A38 /* Build configuration list for PBXNativeTarget "TTIMSocket" */;
 			buildPhases = (
+				3A2662574E78BD50B35EE700 /* [CP] Check Pods Manifest.lock */,
 				71494E86207B76D6006C7A38 /* Sources */,
 				71494E87207B76D6006C7A38 /* Frameworks */,
 				71494E88207B76D6006C7A38 /* Resources */,
+				1AB9ADC76C69E874B225B9FE /* [CP] Embed Pods Frameworks */,
+				84CF6698E710971528EE5031 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,16 +213,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AB9ADC76C69E874B225B9FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTIMSocket/Pods-TTIMSocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A2662574E78BD50B35EE700 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84CF6698E710971528EE5031 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTIMSocket/Pods-TTIMSocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		71494E86207B76D6006C7A38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71494F88207CB0A2006C7A38 /* TTWebSocketViewController.m in Sources */,
 				71494EA6207B77A1006C7A38 /* TTSocketManager.m in Sources */,
 				71494EAD207B8A40006C7A38 /* TTCocoaAsyncSocket.m in Sources */,
 				71494EA9207B8457006C7A38 /* TTOSSocketViewController.m in Sources */,
 				71494E92207B76D7006C7A38 /* ViewController.m in Sources */,
 				71494E9D207B76D7006C7A38 /* main.m in Sources */,
+				71494EB1207B9E72006C7A38 /* TTWebSocket.m in Sources */,
 				71494E8F207B76D6006C7A38 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,10 +405,14 @@
 		};
 		71494EA1207B76D7006C7A38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A070F1E5F50A0D95359AC4E4 /* Pods-TTIMSocket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TTIMSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TAO.TTIMSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,10 +422,14 @@
 		};
 		71494EA2207B76D7006C7A38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D119F0AD9D621CC9F262ECBE /* Pods-TTIMSocket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TTIMSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TAO.TTIMSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
