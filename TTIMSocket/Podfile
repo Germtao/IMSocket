@@ -2,6 +2,7 @@ platform :ios, '8.0'
 
 target 'TTIMSocket' do
 
+pod 'MQTTKit'
 pod 'SocketRocket'
 
 end

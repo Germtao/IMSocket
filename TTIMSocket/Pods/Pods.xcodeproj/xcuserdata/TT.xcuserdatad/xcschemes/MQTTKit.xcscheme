@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3C63EA3375E8E5656E80D7D90C2E0211'
-               BlueprintName = 'Pods-TTIMSocket'
+               BlueprintIdentifier = 'CFC64BFC5276620735D8CA089B9D5A2A'
+               BlueprintName = 'MQTTKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-TTIMSocket.a'>
+               BuildableName = 'libMQTTKit.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
